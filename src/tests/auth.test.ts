@@ -24,7 +24,7 @@ describe("auth", () => {
 
   test("no authorization key in the header", () => {
     const apiKey = getAPIKey({});
-    expect(apiKey).toBe("");
+    expect(apiKey).toBeNull();
   });
 
   test("no apikey in the header", () => {
